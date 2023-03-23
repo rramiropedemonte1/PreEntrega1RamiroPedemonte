@@ -99,3 +99,22 @@ strong{
 .consola{
     text-align: center;
 }
+
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bi-bag{
+    color: white;
+    height: 100%;
+    width: 30px;
+    stroke: #000;
+}
+
+
+
+
