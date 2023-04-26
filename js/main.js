@@ -85,3 +85,5 @@ function updateTotal() {
         document.getElementsByClassName("total-price"[0].innerText = "$" + total)
     }
 }
+
+console.log(cartBoxes)

@@ -15,24 +15,25 @@
 
 
       
-
+<h1>ProyectoJS</h1>
 
       <div class="nav container">
 
         
-        <h1>ProyectoJS</h1>
         
         
-        <i class="bi bi-bag" id="cart-icon"></i>
-
-          <div class="cart">
-            <h2 class="cart-title">Tu carrito</h2>
+        
+        <i class="bi bi-bag" id="cart-icon"></i><span id="numerito" class="numerito">0</span>
+        
+          <div id="carrito-productos" class="cart">
+            <h1 class="titulo-principal">Carrito</h1>
+            <h2 id="carrito-vacio" class="cart-title">Tu carrito esta vacio</h2>
             <!-- contenido -->
-            <div class="cart-box">
+            <div class="cart-box" class="carrito-producto" >
                 <img src="./img/air force/Air Force 1 '07 Low 'New York'.jpg" alt="" class="cart-img">
                 <div class="detail-box">
-                    <div class="cart-product-title">Sneaker</div>
-                    <div class="cart-price">$80.000</div>
+                  <div  class="carrito-producto-titulo" class="cart-product-title">Sneaker</div>
+                  <div class="cart-price" class="carrito-producto-precio" >$80.000</div>
                     <input type="number" value="1" class="cart-quantity">
                 </div>
                 <!-- remove -->
@@ -44,7 +45,7 @@
                 <div class="total-price">$0</div>
             </div>
             <!-- buy button -->
-            <button type="button" class="btn-buy">Compra Ya</button>
+            <button id="carrito-acciones" type="button" class="btn-buy" id="carrito-comprado">Compra Ya</button>
             <!-- cart close -->
             <i class="bi bi-x-lg" id="close-cart"></i>
           </div>
@@ -59,7 +60,7 @@
     <br>
 
 
-    <h1>SNEAKERS</h1>
+    <h2>SNEAKERS</h2>
 
     <br>
 
@@ -67,7 +68,10 @@
 
       <div class="container-items">
     
-   
+
+        
+
+        
         
 
         </div>
@@ -104,5 +108,6 @@
        <script src="./js/array.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/sneakers.js"></script>
+<script src="./js/carrito.js"></script>
 </body>
 </html>
