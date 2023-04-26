@@ -86,4 +86,3 @@ function updateTotal() {
     }
 }
 
-console.log(cartBoxes)
