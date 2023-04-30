@@ -1,4 +1,5 @@
 const contenedorSneakers = document.querySelector(".container-items")
+let botonesAgregar = document.querySelectorAll(".producto-agregar")
 
 
 function mostrarProductos() {
@@ -10,7 +11,7 @@ function mostrarProductos() {
             <div class="info-product">
                 <h4>${producto.nombre}</h4>
                 <p class="price">$${producto.precio}</p>
-                <button id="${producto.id}">Añadir al carrito</button>
+                <button class="producto-agregar" id="${producto.id}">Añadir al carrito</button>
             
             </div> `
 
@@ -19,12 +20,29 @@ function mostrarProductos() {
 
     })
     
+    actualizarBotonesAgregar()
 
 }
 
 mostrarProductos(productos)
 
 
+function actualizarBotonesAgregar() {
+    botonesAgregar = document.querySelectorAll(".producto-agregar")
+
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito)
+    });
+}
+
+
+const carrito = []
+
+function agregarAlCarrito(e) {
+    const idBoton = e.currentTarget.id
+    const productoAgregado = productos.find(producto => producto.id === idBoton)
+    console.log(productoAgregado)
+}
 
    
 
