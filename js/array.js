@@ -27,7 +27,6 @@ const productos = [ {
     nombre: "Air Jordan Retro <br> 4 Off-White",
     precio: 120500,
 }
-
      
 
 ]
